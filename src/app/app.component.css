@@ -1,0 +1,9 @@
+.container_{
+    background-color: var(--bc-light);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 100px;
+    align-items: top;
+    justify-content: center;
+}

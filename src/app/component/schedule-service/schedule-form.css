@@ -1,0 +1,68 @@
+input.date{
+	font-size: 14px;
+	padding: 0;
+}
+input,select{
+	font-size: 14px;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	outline: 1px solid gray;
+	padding: 10px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+	filter: invert(0.4);
+	padding: 4px;
+	transition: all 0.5s ease;
+
+
+  }
+input:focus::-webkit-calendar-picker-indicator {
+	  cursor: pointer;
+	  border-radius: 4px;
+	  margin: 0;
+      background-color: rgb(196, 196, 196);
+	  filter: invert(0);
+	}
+input:focus,.form-group,select:focus{
+	
+	border: none !important;
+	outline:1px solid var(--bc-dark) !important	;
+	box-shadow: none;
+
+}
+th{
+	text-align: center;
+}
+input[type='radio']{
+	background-color: black;
+	outline: red;
+}
+
+/* tr{
+	display: flex;justify-content: space-around;
+} */
+
+
+th,td{
+	width: auto;
+	text-align: center;
+}
+th{
+	height: 40px;
+	background-color: #dedede;
+}
+tr.radio-button-container{
+	border-bottom: 1px solid #dedede
+}
+.next-button{
+	margin-top: 50px;
+	background-color: var(--bc-dark);
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-radius: 20px;
+	cursor: pointer;
+}

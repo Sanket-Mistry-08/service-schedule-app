@@ -1,0 +1,10 @@
+<h1 class="mb-4">Schedule your housekeeping service</h1>
+<p>Set your Schedule</p>
+<div class="schedule-navbar mb-4">
+    <div class="nav-item " [routerLink]="['recurring']" [routerLinkActive]="['active']">Recurring</div>
+    <div class="nav-item " [routerLink]="['one-time']" [routerLinkActive]="['active']">One Time</div>
+    <div class="nav-item " [routerLink]="['flexible']" [routerLinkActive]="['active']">Flexible</div>
+</div>
+
+<!-- display one of the schedule forms -->
+<router-outlet></router-outlet>

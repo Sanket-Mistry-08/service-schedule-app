@@ -1,0 +1,11 @@
+select{
+    width: fit-content !important;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+  table{
+    margin: 20px;
+  }

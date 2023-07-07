@@ -1,0 +1,26 @@
+<div style="position: relative;height: 60vh">
+    <div class="header">
+        <h1>Schedule Information</h1>
+        <button class="btn btn-primary mb-3" [routerLink]="['']"> Schedule a service</button>
+        <div>
+            Schedule Type : <select #s (change)="onChange(s)" name="" id="">
+                <option value="all" selected>All</option>
+                <option value="recurring-schedule">Recurring</option>
+                <option value="one-time-schedule">One Time</option>
+                <option value="flexible-schedule">Flexible</option>
+            </select>
+        </div>
+    </div>
+    <div class="schedule-info-container">
+        <div *ngFor="let item of data">
+            <!-- {{item | json}} -->
+            <table>
+                <tr *ngFor="let el of item | keyvalue">
+                    <td>{{el.key}}</td>
+                    <td>{{el.value}}</td>
+                </tr>
+            </table>
+            <div></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+h1{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left:0;
+    width: 55px;
+    height: 4px;
+    background-color: var(--bc-dark);
+}
+
+.schedule-navbar{
+    width: 40vw;
+    /* apply media for above 'auto' */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.schedule-navbar > .nav-item{
+    padding: 0.6rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.schedule-navbar > .nav-item.active{
+    background-color: orange;
+    border-radius: inherit;
+    transition: background-color 0.2s ease-in;
+}
+
+@media (max-width: 900px) {
+   .schedule-navbar{
+    width: 100%;
+   }
+  }

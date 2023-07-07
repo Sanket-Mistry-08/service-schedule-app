@@ -1,27 +1,38 @@
 # ServiceScheduleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+ServiceScheduleApp have functionality to store schedules and also retrieve filtered schedule-data.
 
-## Development server
+## How to run project ? 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+First of all please make sure you have installed node and npm in your system. You can check your node version and npm version by using the following command:
+    node --version
+    npm --version
 
-## Code scaffolding
+step-1) Install Angular CLI
+In order to run project, you need to have Angular CLI installed in your system.To Check Angular CLI version use following command: 
+    ng version
+If Angular CLI is not installed in your system, use following command to install it.
+    npm install -g @angular/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+step-2) Open project folder in cmd
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+step-3) Run project
+Type following command in cmd to run project: 
+    ng serve 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## project structure
 
-## Running end-to-end tests
+This project have two main components: 
+1)schedule-service ( Have functionality to store Schedule data retrieved from user via form )
+2)schedule-information ( Display saved Schedule data )
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+You can find these components in service-schedule-app>src>app>component folder.
 
-## Further help
+You can checkout how components are connected together in src>app>app-routing.module.ts file
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+

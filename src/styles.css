@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --bc-light: #faebd1;
+    --bc-dark: #fe9900
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-radio{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    transition: border 0.2s ease;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.custom-radio.active{
+    border: 8px solid blue;
+    background-color: rgb(255, 255, 255);
+}

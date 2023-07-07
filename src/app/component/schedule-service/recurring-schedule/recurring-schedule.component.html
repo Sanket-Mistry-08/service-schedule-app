@@ -1,0 +1,44 @@
+<form>
+<div class="row mb-3">
+    <div class="col">
+        <select #service_time_limit  class="form-select" >
+            <option  selected value="2">2 hours</option>
+            <option value="3">3 hours</option>
+            <option value="4">4 hours</option>
+          </select>
+    </div>
+    <div class="col">
+        <select #service_recurrence class="form-select">
+            <option selected value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 30px;">
+    <span><b>Start date</b></span>
+    <div class="col mt-2">
+        <input #service_start_date type="datetime-local" [value]="datetimeValue" >
+    </div>
+</div>
+<div class="row">
+    <div class="col" style="position: relative;">
+        <div class="card">
+            <table >
+                <tr><th>Time Slot</th><th *ngFor="let day of days">{{day}}</th></tr>
+                <tr class="radio-button-container"  *ngFor="let period of dayPeriod">
+                    <td>{{period}}</td>
+                    <td style="padding-top: 5px;" *ngFor="let col of days;let i=index"><div  simpleRadio (click)="onClick($event)" class="radio" type="radio" [innerHTML]="days[i]+' : '+period"></div></td>
+                </tr>
+            </table>
+        </div>
+        <span *ngIf="timeSlotError" class="text-danger" style="position: absolute;bottom: -20px;">* Time Slot is a required field</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="next-button" (click)="onSubmit(service_time_limit,service_recurrence,service_start_date)">Next</div>
+    </div>
+</div>
+
+</form>
