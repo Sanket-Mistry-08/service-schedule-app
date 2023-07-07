@@ -3,7 +3,15 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 ServiceScheduleApp has the functionality to store schedules and also retrieve filtered schedule data.
 
-## How to run project ? (OS: windows)
+# Issues
+
+1) 'https://631945908e51a64d2be10770.mockapi.io/api/v1/products' API is not working for post requests.
+
+# solution
+
+1) To handle issue(1), I developed service(functionality) that stores and provides schedule data.
+
+## How to run the project? (OS: windows)
 
 First of all please make sure you have installed node and npm in your system. You can check your node version and npm version by using the following command:
 (1)node --version
