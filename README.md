@@ -5,7 +5,7 @@ ServiceScheduleApp has the functionality to store schedules and also retrieve fi
 
 # Issues
 
-1) 'https://631945908e51a64d2be10770.mockapi.io/api/v1/products' API is not working for post requests.
+1) 'https://631945908e51a64d2be10770.mockapi.io/api/v1/products' URL is not working for post requests.
 
 # solution
 
