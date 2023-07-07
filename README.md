@@ -21,9 +21,9 @@ step-2) Open project in cmd
 - Extract the zip file and open it in cmd.
 
 step-3) Run project
-Type following commands in cmd to run project: 
+Type the following commands in cmd to run the project: 
    (1)npm install (To install required dependencies) 
-   (2)ng serve (To run the project) 
+   (2)ng serve (To run the project on http://localhost:4200/) 
 
 
 ## project structure
