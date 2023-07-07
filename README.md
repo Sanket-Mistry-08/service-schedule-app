@@ -6,14 +6,14 @@ ServiceScheduleApp has the functionality to store schedules and also retrieve fi
 ## How to run project ? (OS: windows)
 
 First of all please make sure you have installed node and npm in your system. You can check your node version and npm version by using the following command:
-    node --version
-    npm --version
+(1)node --version
+(2)npm --version
 
 step-1) Install Angular CLI
 - In order to run the project, you need to have Angular CLI installed in your system.To Check the Angular CLI version use the following command: 
-    ng version
+    (1)ng version
 - If Angular CLI is not installed in your system, use the following command to install it.
-    npm install -g @angular/cli
+    (1)npm install -g @angular/cli
 
 
 step-2) Open project in cmd
@@ -22,8 +22,8 @@ step-2) Open project in cmd
 
 step-3) Run project
 Type following commands in cmd to run project: 
-    npm install (To install required dependencies)
-    ng serve (To run the project)
+   (1)npm install (To install required dependencies) 
+   (2)ng serve (To run the project) 
 
 
 ## project structure
